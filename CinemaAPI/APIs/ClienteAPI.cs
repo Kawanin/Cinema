@@ -26,7 +26,6 @@ public static class ClienteApi
 
         group.MapPost("/", async (Cliente cliente, BancoDeDados db) =>
         {
-
             db.Clientes.Add(cliente);
             await db.SaveChangesAsync();
 

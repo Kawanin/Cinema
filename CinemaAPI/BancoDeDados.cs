@@ -15,18 +15,18 @@ public class BancoDeDados : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // modelBuilder.Entity<Ingresso>()
-        //     .HasOne(f => f.Cliente)
-        //     .WithMany(c => c.Ingressos)
-        //     .HasForeignKey(f => f.ClienteID);
+        modelBuilder.Entity<Ingresso>()
+            .HasOne(f => f.Cliente)
+            .WithMany(c => c.Ingressos)
+            .HasForeignKey(f => f.ClienteID);
 
-        // modelBuilder.Entity<Ingresso>()
-        //     .HasOne(f => f.Filme)
-        //     .WithMany(f => f.Ingressos)
-        //     .HasForeignKey(f => f.FilmeID);
+        modelBuilder.Entity<Ingresso>()
+            .HasOne(f => f.Filme)
+            .WithMany(f => f.Ingressos)
+            .HasForeignKey(f => f.FilmeID);
 
-        // modelBuilder.Entity<Ingresso>()
-        //     .HasMany(p => p.CarrinhoBomboniere)
-        //     .WithMany(c => c.Ingressos);
+        modelBuilder.Entity<Ingresso>()
+            .HasMany(p => p.CarrinhoBomboniere)
+            .WithMany(c => c.Ingressos);
     }
 }

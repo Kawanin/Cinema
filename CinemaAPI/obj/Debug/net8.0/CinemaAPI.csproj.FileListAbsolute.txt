@@ -124,3 +124,4 @@ C:\Users\junio\Desktop\Projetos\Cinema\CinemaAPI\bin\Debug\net8.0\Microsoft.Open
 C:\Users\junio\Desktop\Projetos\Cinema\CinemaAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\junio\Desktop\Projetos\Cinema\CinemaAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\junio\Desktop\Projetos\Cinema\CinemaAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\junio\Desktop\Projetos\Cinema\CinemaAPI\obj\Debug\net8.0\CinemaAPI.sourcelink.json

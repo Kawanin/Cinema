@@ -1,10 +1,23 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<BancoDeDados>();
+builder.Services.AddCors();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<BancoDeDados>();
+
 var app = builder.Build();
+
+app.UseCors(builder => builder
+  .AllowAnyOrigin()
+  .AllowAnyHeader()
+  .AllowAnyMethod()
+);
 
 if (app.Environment.IsDevelopment())
 {

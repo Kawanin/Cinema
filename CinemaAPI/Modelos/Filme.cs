@@ -8,6 +8,6 @@ public class Filme
     public virtual string? Categoria { get; set; }
     public virtual string? Direcao { get; set; }
     public virtual string? PaisOrigem { get; set; }
-    public virtual string Poster { get; set; }
+    public virtual string? Poster { get; set; }
     public virtual ICollection<Ingresso> Ingressos { get; set; } = new List<Ingresso>();
 }
